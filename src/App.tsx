@@ -1,8 +1,8 @@
 // src/App.tsx
 
 import { Header } from "./shared/Header";
-import { Hero } from "./pages/Home/hero";
-import Footer from "./shared/footer";
+import { Hero } from "./pages/Home/Hero";
+import Footer from "./shared/Footer";
 
 function App() {
 
