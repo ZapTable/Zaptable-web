@@ -4,32 +4,35 @@ import Button from '@mui/material/Button';
 
 export const Header = () => {
 
-    return <nav className="flex justify-between items-center px-8 py-4 bg-white">
-        <div className="text-2xl font-bold">
+    return <nav className="flex justify-between items-center px-8 py-4 bg-light">
+        <div className="text-2xl font-aspekta text-brand-green">
             Zaptable
         </div>
 
-        <ul className="hidden md:flex gap-6 text-gray-700">
+        <ul className="hidden md:flex gap-6 text-gray-700 font-aspekta">
             <li><a href="features">Features</a></li>
             <li><a href="solutions">Solutions</a></li>
             <li><a href="pricing">Pricing</a></li>
             <li><a href="about">About</a></li>
         </ul>
         <Button
-            variant='contained'
+            variant="contained"
             sx={{
                 display: { xs: 'none', md: 'inline-flex' },
-                backgroundColor: "black",
-                color: 'white',
+                backgroundColor: "#004838",
+                color: "#E2FB6C",
                 textTransform: 'none',
-                paddingX: 2,
-                paddingY: 1,
+                px: 2,
+                py: 1,
                 transition: 'background-color 0.2s ease-in-out',
                 '&:hover': {
-                    backgroundColor: '#15803d',
-                },}}>
+                    backgroundColor: "#073127",
+                },
+            }}
+        >
             Get Started
         </Button>
+
 
         <div className="md:hidden text-3xl cursor-pointer">
             {/* ☰ */}

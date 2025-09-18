@@ -1,1 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Aspekta:wght@400;600;700&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --color-brand-green: #004838;
+  --color-brand-lime: #E2FB6C;
+  --color-brand-dark: #073127;
+  --color-brand-gray: #333F3C;
+  --color-brand-light: #EBEDE8;
+
+  --font-aspekta: "Aspekta", sans-serif;
+
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-550: 550;
+  --font-weight-600: 600;
+}
