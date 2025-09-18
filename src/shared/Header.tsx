@@ -5,8 +5,8 @@ import Button from '@mui/material/Button';
 export const Header = () => {
 
     return (
-        <nav className="flex justify-between items-center px-8 py-4 bg-brand-green text-brand-light font-aspekta">
-            <div className="text-2xl font-aspekta text-brand-lime">
+        <nav className="flex justify-between items-center px-8 py-4  text-brand-dark font-aspekta">
+            <div className="text-2xl font-aspekta text-brand-green">
                 Zaptable
             </div>
 
@@ -20,15 +20,15 @@ export const Header = () => {
                 variant="contained"
                 sx={{
                     display: { xs: 'none', md: 'inline-flex' },
-                    backgroundColor: "#E2FB6C",
-                    color: "#073127",
+                    backgroundColor: "#073127",
+                    color: "#EBEDE8",
                     textTransform: 'none',
                     px: 2,
                     py: 1,
                     transition: 'background-color 0.2s ease-in-out',
                     '&:hover': {
                         backgroundColor: "#004838",
-                        color:"#EBEDE8"
+                        color:"#E2FB6C"
                     },
                 }}
             >

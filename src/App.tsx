@@ -1,17 +1,18 @@
 // src/App.tsx
 
-import { Footer } from "./shared/Footer";
 import { Header } from "./shared/Header";
+import { Hero } from "./pages/Home/hero";
+import Footer from "./shared/footer";
 
 function App() {
 
   return (
-    <div className="flex flex-col min-h-screen bg-brand-bg">
+    <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
-        {/* Your page content will go here */}
+        <Hero/>
       </main>
-      <Footer /> {/* Add the Footer here */}
+      <Footer />
     </div>
   )
 }
