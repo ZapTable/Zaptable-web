@@ -12,7 +12,7 @@ export const Header = () => {
 
             <ul className="hidden md:flex gap-6">
                 <li><a href="features">Features</a></li>
-                <li><a href="solutions">Solutions</a></li>
+                <li><a href="#solutions-section">Solutions</a></li>
                 <li><a href="pricing">Pricing</a></li>
                 <li><a href="#about-section">About</a></li>
             </ul>
