@@ -2,6 +2,7 @@
 
 import { Header } from "./shared/Header";
 import { Hero } from "./pages/Home/Hero";
+import { Solutions } from "./pages/Solutions/Solutions";
 import Footer from "./shared/Footer";
 import { AboutPage } from "./pages/About/About";
 
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <main className="flex-grow">
         <Hero/>
+        <Solutions/>
         <AboutPage/>
       </main>
       <Footer />
