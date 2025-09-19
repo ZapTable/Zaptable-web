@@ -69,16 +69,16 @@ export const AboutPage = () => {
                     variant="contained"
                     sx={{
                         marginTop: '2rem',
-                        backgroundColor: "#004838",
-                        color: "#E2FB6C",
+                        backgroundColor: "#EBEDE8",
+                        color: "#073127",
                         textTransform: 'none',
                         fontSize: '1.1rem',
                         px: 4,
                         py: 1.5,
                         fontWeight: 'bold',
                         '&:hover': {
-                            backgroundColor: "#E2FB6C",
-                            color:"#073127"
+                            backgroundColor: "#000000",
+                            color:"#ffffff"
                         },
                     }}
                 >

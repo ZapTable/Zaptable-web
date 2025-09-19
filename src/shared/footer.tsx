@@ -28,7 +28,7 @@ export const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     {/* Brand Section */}
                     <div className="md:col-span-1">
-                        <h2 className="text-2xl font-bold text-brand-lime">Zaptable</h2>
+                        <h2 className="text-2xl font-bold text-black">Zaptable</h2>
                         <p className="mt-2 text-gray-300">Simplifying your workflow.</p>
                         <div className="flex gap-4 mt-4">
                             {socialLinks.map((link) => (
@@ -41,7 +41,7 @@ export const Footer = () => {
 
                     {/* Navigation Links */}
                     <div>
-                        <h3 className="font-bold tracking-wider uppercase">Product</h3>
+                        <h3 className="font-bold tracking-wider uppercase ">Product</h3>
                         <ul className="mt-4 space-y-2">
                             {navLinks.map((link) => (
                                 <li key={link.name}>
