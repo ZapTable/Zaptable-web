@@ -3,6 +3,8 @@ import { PricingCard } from "../../components/Pricing/PricingCard";
 export const PricingPage = () => {
   return (
     <section id="pricing-section" className="py-24">
+      <div className="max-w-9xl mx-auto px-6">
+        <div className="bg-gray-200 rounded-3xl shadow-xl p-12">
       <div className="container relative z-10 max-w-2xl mx-auto text-center">
         <h2 className="font-600 text-4xl text-brand-green">Choose the right plan for your restaurant</h2>
         <p className="font-400 text-xl text-brand-gray max-w-2xl mx-auto mt-4">
@@ -61,6 +63,8 @@ export const PricingPage = () => {
             { label: "24/7 premium support", enabled: true },
           ]}
         />
+      </div>
+      </div>
       </div>
     </section>
   );
