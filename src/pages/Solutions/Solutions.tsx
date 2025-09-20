@@ -1,6 +1,6 @@
 // src/pages/Home/Solutions.tsx
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import cloudkitchen from '../../assets/cloud_kitchen.jpg';
 import qkservice from '../../assets/quickservice.jpeg';
 

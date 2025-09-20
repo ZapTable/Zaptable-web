@@ -6,6 +6,7 @@ import { Solutions } from "./pages/Solutions/Solutions";
 import Footer from "./shared/Footer";
 import { AboutPage } from "./pages/About/About";
 import { PricingPage } from "./pages/Pricing/Pricing";
+import { FeaturesPage } from "./pages/Features/Features";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Hero/>
         <AboutPage/>
         <Solutions/>
+        <FeaturesPage/>
         <PricingPage/>
       </main>
       <Footer />
