@@ -6,8 +6,7 @@ export const Hero = () => (
     {/* Hero Content */}
     <div className="relative z-10 max-w-2xl mx-auto text-center">
       <h1 className="text-6xl font-besley font-700 text-brand-dark leading-tight mb-6">
-        One tool to <span className="underline decoration-brand-lime decoration-4">manage</span><br />
-        your restaurant
+        One tool to manage your <span className="underline decoration-brand-lime decoration-4">restaurant</span><br />
       </h1>
       <p className="text-xl font-aspekta font-400 text-brand-gray mb-8 leading-tight">
         Streamline your restaurant operations with real-time insights and effortless team coordination for seamless, top-notch service every time.

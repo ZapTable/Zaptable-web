@@ -1,6 +1,8 @@
 // src/pages/Home/Solutions.tsx
 
 import React, { useState } from 'react';
+import cloudkitchen from '../../assets/cloud_kitchen.jpg';
+import qkservice from '../../assets/quickservice.jpeg';
 
 // We'll define our data here for easy management
 const solutionsData = [
@@ -12,13 +14,13 @@ const solutionsData = [
     },
     {
         name: 'Quick Service (QSR)',
-        image: 'https://images.unsplash.com/photo-1552529621-12c855a8029b?w=800&q=80',
+        image: qkservice,
         description: 'Speed is everything. Our platform ensures lightning-fast billing, efficient order taking, and real-time tracking of your most popular items to keep queues moving.',
         features: ['Lightning-Fast Billing', 'Walk-in & Takeaway Modes', 'Real-time Inventory Tracking', 'Daily Sales Reports']
     },
     {
         name: 'Cloud Kitchens',
-        image: 'https://images.unsplash.com/photo-1582793926027-038b40ef916e?w=800&q=80',
+        image: cloudkitchen,
         description: 'Run your delivery business from a single dashboard. Integrate online orders, manage your raw materials precisely, and analyze your performance across platforms.',
         features: ['Online Ordering Widget', 'Centralized Menu Management', 'Raw Material & Recipe Management', 'Zomato/Swiggy Reconciliation']
     },
@@ -27,7 +29,7 @@ const solutionsData = [
 
 export const Solutions = () => {
     // useState hook to manage which tab is active
-    const [activeTab, setActiveTab] = useState(solutionsData[0].name);
+    const [activeTab, setActiveTab] = useState(solutionsData[1].name);
 
     // Find the currently active solution from the data array
     const activeSolution = solutionsData.find(solution => solution.name === activeTab);
@@ -62,14 +64,14 @@ export const Solutions = () => {
                 {/* Tab Content */}
                 {activeSolution && (
                     <div className="grid md:grid-cols-2 gap-12 items-center text-left mt-12 animate-fade-in">
-                        <img src={activeSolution.image} alt={`${activeSolution.name} restaurant`} className="rounded-lg shadow-xl w-full h-full object-cover" />
+                        <img src={activeSolution.image} alt={`${activeSolution.name} restaurant`} className="rounded-lg shadow-xl w-full h-80 md:h-96 object-cover" />
                         <div className="p-4">
                             <h3 className="font-besley text-3xl font-bold text-brand-dark">{activeSolution.name}</h3>
                             <p className="font-aspekta text-brand-gray mt-4 mb-6">{activeSolution.description}</p>
                             <ul className="space-y-3">
                                 {activeSolution.features.map(feature => (
                                     <li key={feature} className="flex items-center font-aspekta">
-                                        <svg className="w-5 h-5 mr-3 text-brand-lime" fill="currentColor" viewBox="0 0 20 20">
+                                        <svg className="w-5 h-5 mr-3 text-brand-green" fill="currentColor" viewBox="0 0 20 20">
                                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                                         </svg>
                                         {feature}
