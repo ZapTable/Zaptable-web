@@ -1,6 +1,6 @@
 # 🍽️ Zaptable – Restaurant Management System
 
-Zaptable is a modern **restaurant management system** built with React, TailwindCSS, and Material UI.
+Zaptable is a modern **restaurant management system**.
 It helps restaurants of all sizes streamline **billing, orders, inventory, staff, and customer experience** — all from a single dashboard.
 
 ## ✨ Features
