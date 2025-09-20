@@ -15,6 +15,7 @@ export const FeatureCard = ({ title, features }: FeatureCardProps) => {
                 maxWidth: 280,
                 borderRadius: 4,
                 boxShadow: 3,
+                backgroundColor: "#f0f2f5",
                 transition: 'transform 0.3s, box-shadow 0.3s',
                 '&:hover': {
                     transform: 'translateY(-5px)',
@@ -27,7 +28,7 @@ export const FeatureCard = ({ title, features }: FeatureCardProps) => {
                     gutterBottom
                     variant="h5"
                     component="div"
-                    sx={{ color: 'text.primary', fontWeight: 600, mb: 2 }}
+                    sx={{ color: 'text.primary', fontWeight: 600, mb: 2, lineHeight: 1.5 }}
                 >
                     {title}
                 </Typography>
@@ -36,7 +37,7 @@ export const FeatureCard = ({ title, features }: FeatureCardProps) => {
                     {features.map((feature, index) => (
                         <li key={index} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                             <CheckCircleIcon sx={{ color: 'green', fontSize: 20 }} />
-                            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                            <Typography variant="body2" sx={{ color: 'text.secondary', lineHeight:2 }}>
                                 {feature}
                             </Typography>
                         </li>

@@ -17,7 +17,7 @@ type PricingCardProps = {
   description: string;
   buttonText: string;
   features: Feature[];
-  
+
 };
 
 export const PricingCard = ({
@@ -90,7 +90,7 @@ export const PricingCard = ({
         {features.map((feature, idx) => (
           <div
             key={idx}
-            className={`flex items-center gap-2 mb-2 ${
+            className={`flex items-center gap-2 mb-2 leading-7 ${
               feature.enabled ? 'text-black' : 'text-gray-400'
             }`}
           >
