@@ -1,69 +1,29 @@
-# React + TypeScript + Vite
+# 🍽️ Zaptable – Restaurant Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Zaptable is a modern **restaurant management system** built with React, TailwindCSS, and Material UI.
+It helps restaurants of all sizes streamline **billing, orders, inventory, staff, and customer experience** — all from a single dashboard.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Core Features
 
-## Expanding the ESLint configuration
+* ⚡ **Fast Billing & KOT Printing** – Generate bills in seconds and print kitchen order tickets without delays.
+* 🔄 **Multi-Device & Counter Sync** – Manage multiple counters or tablets seamlessly.
+* 🧾 **Customizable Invoices** – GST, discounts, and branding support.
+* 🍲 **Menu & Recipe Management** – Centralized menu with raw material tracking.
+* 📦 **Inventory Management** – Track stock, wastage, and re-order alerts.
+* 👨‍🍳 **Staff & Role Management** – Manage staff access and monitor performance.
+* 📊 **Analytics & Reporting** – Sales, customer behavior, and performance insights.
+* 🌐 **Online Ordering Integration** – Works with Zomato, Swiggy, and custom widgets.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Solutions for Every Business
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* 🍷 **Fine Dining** – Table reservations, split/merge bills, and guest feedback.
+* 🍔 **Quick Service (QSR)** – Lightning-fast checkout and takeaway support.
+* 🏢 **Cloud Kitchens** – Centralized order management and platform reconciliation.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🔥 With **Zaptable**, your restaurant runs faster, smarter, and more connected.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
